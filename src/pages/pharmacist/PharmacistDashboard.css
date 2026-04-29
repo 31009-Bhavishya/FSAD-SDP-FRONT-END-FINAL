@@ -1,6 +1,6 @@
 .pharmacist-dashboard {
   min-height: 100vh;
-  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  background: linear-gradient(180deg, hsl(145, 61%, 61%) 0%, #83c020 100%);
   padding: 32px;
   font-family: Arial, sans-serif;
   color: #0f172a;
@@ -36,15 +36,15 @@
 .pharmacist-table th, .pharmacist-table td { text-align: left; padding: 12px 10px; border-bottom: 1px solid #e2e8f0; }
 .pharmacist-table th { color: #334155; }
 .pharmacist-badge { display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; background: #dbeafe; color: #1d4ed8; }
-.pharmacist-badge.low { background: #fee2e2; color: #b91c1c; }
+.pharmacist-badge.low { background: #8c4141; color: #b91c1c; }
 .pharmacist-badge.warning { background: #fef3c7; color: #b45309; }
 .pharmacist-page { min-height: 100vh; background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); padding: 32px; font-family: Arial, sans-serif; }
 .pharmacist-page h1 { margin-top: 0; }
-.pharmacist-form, .pharmacist-section { background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 20px; margin-bottom: 20px; }
+.pharmacist-form, .pharmacist-section { background: #c59d0b; border: 1px solid #e2e8f0; border-radius: 18px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 20px; margin-bottom: 20px; }
 .pharmacist-input, .pharmacist-textarea, .pharmacist-select { width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 12px; box-sizing: border-box; }
 .pharmacist-textarea { min-height: 110px; resize: vertical; }
 .pharmacist-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-.pharmacist-btn { background: #2563eb; color: #fff; border: none; border-radius: 12px; padding: 11px 16px; cursor: pointer; font-weight: 600; }
+.pharmacist-btn { background: #2563eb; color: #be5555; border: none; border-radius: 12px; padding: 11px 16px; cursor: pointer; font-weight: 600; }
 .pharmacist-btn.secondary { background: #0f766e; }
 .pharmacist-btn.ghost { background: #e2e8f0; color: #0f172a; }
 @media (max-width: 900px) { .pharmacist-panels { grid-template-columns: 1fr; } }

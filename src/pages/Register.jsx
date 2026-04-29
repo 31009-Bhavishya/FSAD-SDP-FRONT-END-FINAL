@@ -32,7 +32,7 @@ function Register() {
     e.preventDefault();
     setServerError("");
 
-    // Inline validation
+    
     const validationErrors = validateRegisterForm({ name, email, password, confirmPassword });
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -42,7 +42,7 @@ function Register() {
     setLoading(true);
 
     try {
-      // ✅ FETCH call to Spring Boot backend
+      
       const response = await fetch(`${BASE_URL}/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -57,7 +57,7 @@ function Register() {
         return;
       }
 
-      // Also save to localStorage as backup
+      
       const users = JSON.parse(localStorage.getItem("users")) || [];
       const newUser = {
         id: Date.now().toString(),
@@ -71,7 +71,7 @@ function Register() {
       navigate("/login");
 
     } catch (err) {
-      // Fallback to localStorage if backend is down
+      
       const users = JSON.parse(localStorage.getItem("users")) || [];
       const emailExists = users.some((u) => u.email === email);
       if (emailExists) {

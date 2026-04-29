@@ -1,8 +1,7 @@
 // Central API service for MediCurex
 // Base URL is configurable through Vite environment variable VITE_API_BASE_URL
 
-export const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8087/api";
-
+export const BASE_URL = "https://sdp-new-backend.onrender.com";
 // Generic fetch wrapper with error handling
 const request = async (method, endpoint, data = null) => {
   const options = {
